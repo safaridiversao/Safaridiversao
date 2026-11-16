@@ -1,0 +1,6 @@
+{
+  "name": "Safári Diversão",
+  "description": "Plataforma oficial da Safári Diversão: parques infantis em shoppings pelo Brasil, compra de ingressos, loja oficial e programa de afiliados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

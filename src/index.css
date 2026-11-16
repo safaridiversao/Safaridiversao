@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-safari-emerald: #17663f;
+  --color-safari-emerald-dark: #104a2d;
+  --color-safari-emerald-soft: #ecf5f0;
+  --color-safari-coral: #e85d04;
+  --color-safari-coral-hover: #c94c00;
+  --color-safari-gold: #d97706;
+  --color-safari-gold-soft: #fef7e6;
+  --color-safari-canvas: #f8faf8;
+  --color-safari-ink: #13221a;
+  --color-safari-muted: #52635a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-safari-canvas);
+    color: var(--color-safari-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
